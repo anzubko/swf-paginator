@@ -7,107 +7,79 @@ use SWF\Interface\PaginatorInterface;
 readonly class Paginator implements PaginatorInterface
 {
     /**
-     * Total number of entries (copied from arguments).
-     *
-     * @var int<1,max>
+     * Total number of entries (>=1) (copied from arguments).
      */
     public int $totalEntries;
 
     /**
-     * Number of entries per page (copied from arguments).
-     *
-     * @var int<1,max>
+     * Number of entries per page (>=1) (copied from arguments).
      */
     public int $entriesPerPage;
 
     /**
-     * Number of pages per set (copied from arguments).
-     *
-     * @var int<1,max>
+     * Number of pages per set (>=1) (copied from arguments).
      */
     public int $pagesPerSet;
 
     /**
-     * Current number of page (copied from arguments and corrected).
-     *
-     * @var int<1,max>
+     * Current number of page (>=1) (copied from arguments and corrected).
      */
     public int $currentPage;
 
     /**
-     * Total number of pages.
-     *
-     * @var int<1,max>
+     * Total number of pages (>=1).
      */
     public int $totalPages;
 
     /**
-     * Previous number of page
-     *
-     * @var int<1,max>|null
+     * Previous number of page (>=1 or null)
      */
     public ?int $prevPage;
 
     /**
-     * Next number of page.
-     *
-     * @var int<1,max>|null
+     * Next number of page (>=1 or null).
      */
     public ?int $nextPage;
 
     /**
-     * Start position of current set.
-     *
-     * @var int<1,max>
+     * Start position of current set (>=1).
      */
     public int $startOfSet;
 
     /**
-     * End position of current set.
-     *
-     * @var int<1,max>
+     * End position of current set (>=1).
      */
     public int $endOfSet;
 
     /**
-     * Numbers of set (One or more numbers in array).
+     * Numbers of set (One or more numbers (>=1) in array).
      *
-     * @var array<int<1,max>>
+     * @var int[]
      */
     public array $numbersOfSet;
 
     /**
-     * Nearest page number of the previous set.
-     *
-     * @var int<1,max>|null
+     * Nearest page number of the previous set (>=1 or null).
      */
     public ?int $pageOfPrevSet;
 
     /**
-     * Nearest page number of the next set.
-     *
-     * @var int<1,max>|null
+     * Nearest page number of the next set (>=1 or null).
      */
     public ?int $pageOfNextSet;
 
     /**
-     * Starting position of the slice.
-     *
-     * @var int<0,max>
+     * Starting position of the slice (>=0).
      */
     public int $startOfSlice;
 
     /**
-     * Ending position of the slice.
-     *
-     * @var int<0,max>
+     * Ending position of the slice (>=0).
      */
     public int $endOfSlice;
 
     /**
-     * Length of the slice.
-     *
-     * @var int<1,max>
+     * Length of the slice (>=1).
      */
     public int $lengthOfSlice;
 
