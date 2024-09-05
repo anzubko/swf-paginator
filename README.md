@@ -1,4 +1,4 @@
-# SWF Paginator
+# Simplest framework pagination calculator
 
 This class intended for organization of page-by-page navigation on some data. Basically intended for construction of page-by-page navigation panels on websites.
 

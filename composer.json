@@ -1,6 +1,6 @@
 {
     "name": "anzubko/swf-paginator",
-    "description": "SWF paginator",
+    "description": "Simplest framework pagination calculator",
     "type": "library",
     "license": "GPL-3.0-or-later",
     "autoload": {
@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "php": "^8.2"
+        "php": ">=8.2"
     }
 }
